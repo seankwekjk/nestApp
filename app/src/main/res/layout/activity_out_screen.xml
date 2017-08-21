@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.seankwek.nest.outScreen"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/cnb"
+        android:text="CNB"
+        android:textSize="35sp"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/tnb"
+        android:text="TNB"
+        android:textSize="35sp"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/cnb"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/mindef"
+        android:text="MINDEF"
+        android:textSize="35sp"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/tnb"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/other"
+        android:text="Other"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/mindef"
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="35dp"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:hint="Enter Location:"
+        android:id="@+id/otherText"
+        app:layout_constraintTop_toBottomOf="@+id/mindef"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="150sp"/>
+
+</android.support.constraint.ConstraintLayout>
