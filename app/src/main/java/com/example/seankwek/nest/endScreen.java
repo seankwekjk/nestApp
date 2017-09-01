@@ -31,6 +31,7 @@ public class endScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(endScreen.this, MainActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(myIntent);
             }
         });
