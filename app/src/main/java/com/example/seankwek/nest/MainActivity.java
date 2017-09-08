@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nestText="NEST RS";
-                Intent myIntent = new Intent(MainActivity.this, endScreen.class).putExtra("nestText",nestText);
+                Intent myIntent = new Intent(MainActivity.this, endScreen.class).putExtra("nestText",nestText).putExtra("remindText","remindRS");
                 startActivity(myIntent);
             }
         });

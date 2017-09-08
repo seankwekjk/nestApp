@@ -21,10 +21,20 @@ public class endScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end_screen);
         final String nestText = getIntent().getExtras().getString("nestText");
+        final String remindText = getIntent().getExtras().getString("remindText");
+        TextView reminderText = (TextView) findViewById(R.id.reminderText);
         TextView textPreview = (TextView) findViewById(R.id.textPreview);
         textPreview.setText(nestText);
         Button resetButton = (Button) findViewById(R.id.resetButton);
         Button confirmButton = (Button) findViewById(R.id.confirmButton);
+        if(remindText!=null){
+            if(remindText.equals("remindMC")){
+                reminderText.setText("Reminder: Submit your MC on your next working day.");
+            }
+            else if(remindText.equals("remindRS")){
+                reminderText.setText("Reminder: NEST MC to update MC status.");
+            }
+        }
 
         resetButton.setOnClickListener(new View.OnClickListener() {
 

@@ -34,6 +34,7 @@ public class mcScreen extends AppCompatActivity {
                     String from=fromDate.getText().toString(),to=toDate.getText().toString();
                     nestText=nestText+from+" - "+to;
                     Intent myIntent = new Intent(mcScreen.this, endScreen.class).putExtra("nestText",nestText);
+                    myIntent.putExtra("remindText","remindMC");
                     startActivity(myIntent);
                 }
             }
