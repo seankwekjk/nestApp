@@ -1,5 +1,8 @@
 # nestApp
 Beta NEST App
-Please do not clone without permission
+
+**Please do not clone without permission**
+
 Developed by Sean Kwek
-Request access/walkthrough at seankwekjk@gmail.com
+
+Feel free to provide suggestions or request access/walkthrough at seankwekjk@gmail.com
