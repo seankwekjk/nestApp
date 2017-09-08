@@ -32,7 +32,7 @@ public class endScreen extends AppCompatActivity {
                 reminderText.setText("Reminder: Submit your MC on your next working day.");
             }
             else if(remindText.equals("remindRS")){
-                reminderText.setText("Reminder: NEST MC to update MC status.");
+                reminderText.setText("Reminder: NEST Medical Leave to update MC status.");
             }
         }
 

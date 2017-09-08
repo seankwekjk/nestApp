@@ -47,8 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String nestText="NEST OFF";
-                Intent myIntent = new Intent(MainActivity.this, endScreen.class).putExtra("nestText",nestText);
+                Intent myIntent = new Intent(MainActivity.this, offScreen.class);
                 startActivity(myIntent);
             }
         });
