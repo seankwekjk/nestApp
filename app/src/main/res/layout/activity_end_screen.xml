@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Nest Message Is"
+        android:text="Your NEST Message Is"
         android:textSize="25sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -48,6 +48,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/confirmButton"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
@@ -65,6 +66,7 @@
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="121dp" />
 
