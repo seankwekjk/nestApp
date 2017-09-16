@@ -34,6 +34,9 @@ public class endScreen extends AppCompatActivity {
             else if(remindText.equals("remindRS")){
                 reminderText.setText("Reminder: NEST Medical Leave to update MC status.");
             }
+            else if(remindText.equals("remindOML")){
+                reminderText.setText("Reminder: Submit OML application on next working day.");
+            }
         }
 
         resetButton.setOnClickListener(new View.OnClickListener() {

@@ -44,6 +44,9 @@ public class leaveDatesScreen extends AppCompatActivity {
                     if(typeText.equals("mc")){
                         myIntent.putExtra("remindText","remindMC");
                     }
+                    else if(typeText.equals("oml")){
+                        myIntent.putExtra("remindText","remindOML");
+                    }
                     startActivity(myIntent);
                 }
             }
