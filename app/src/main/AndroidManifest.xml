@@ -20,12 +20,13 @@
         </activity>
         <activity android:name=".endScreen" />
         <activity android:name=".mcScreen" />
-        <activity android:name=".leaveScreen" />
+        <activity android:name=".leaveDatesScreen" />
         <activity android:name=".outScreen" />
         <activity android:name=".courseScreen" />
         <activity android:name=".offScreen" />
         <activity android:name=".medicalScreen" />
-        <activity android:name=".maScreen"></activity>
+        <activity android:name=".maScreen" />
+        <activity android:name=".leaveScreen"></activity>
     </application>
 
 </manifest>
