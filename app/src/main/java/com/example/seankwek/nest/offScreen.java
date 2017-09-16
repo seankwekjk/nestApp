@@ -23,16 +23,9 @@ public class offScreen extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if (TextUtils.isEmpty(offText.getText().toString())) {
-                    Toast.makeText(offScreen.this, "Please enter a reason for off", Toast.LENGTH_LONG).show();
-                }
-                else{
-                    String nestText="NEST DUTY OFF ";
-                    String off=offText.getText().toString();
-                    nestText=nestText+off;
-                    Intent myIntent = new Intent(offScreen.this, endScreen.class).putExtra("nestText",nestText);
-                    startActivity(myIntent);
-                }
+                String nestText="NEST OFF (DUTY)";
+                Intent myIntent = new Intent(offScreen.this, endScreen.class).putExtra("nestText",nestText);
+                startActivity(myIntent);
             }
         });
 
@@ -44,9 +37,9 @@ public class offScreen extends AppCompatActivity {
                     Toast.makeText(offScreen.this, "Please enter a reason for off", Toast.LENGTH_LONG).show();
                 }
                 else{
-                    String nestText="NEST OFF IN LIEU ";
+                    String nestText="NEST OFF (IN-LIEU: ";
                     String off=offText.getText().toString();
-                    nestText=nestText+off;
+                    nestText=nestText+off+")";
                     Intent myIntent = new Intent(offScreen.this, endScreen.class).putExtra("nestText",nestText);
                     startActivity(myIntent);
                 }

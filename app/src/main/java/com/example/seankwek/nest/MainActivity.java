@@ -16,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button defaultNest=(Button) findViewById(R.id.stdOption);
-        Button rsNest=(Button) findViewById(R.id.rsOption);
         Button offNest=(Button) findViewById(R.id.offOption);
-        Button mcNest=(Button) findViewById(R.id.mcOption);
+        Button medNest=(Button) findViewById(R.id.medOption);
         Button leaveNest=(Button) findViewById(R.id.leaveOption);
         Button outNest=(Button) findViewById(R.id.outOption);
-        Button courseNest=(Button) findViewById(R.id.courseOption);
 
         defaultNest.setOnClickListener(new View.OnClickListener() {
 
@@ -33,12 +31,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        rsNest.setOnClickListener(new View.OnClickListener() {
+        medNest.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                String nestText="NEST RS";
-                Intent myIntent = new Intent(MainActivity.this, endScreen.class).putExtra("nestText",nestText).putExtra("remindText","remindRS");
+                Intent myIntent = new Intent(MainActivity.this, medicalScreen.class);
                 startActivity(myIntent);
             }
         });
@@ -52,14 +49,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mcNest.setOnClickListener(new View.OnClickListener() {
+        /*mcNest.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, mcScreen.class);
                 startActivity(myIntent);
             }
-        });
+        });*/
 
         leaveNest.setOnClickListener(new View.OnClickListener() {
 
@@ -79,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        courseNest.setOnClickListener(new View.OnClickListener() {
+        /*courseNest.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, courseScreen.class);
                 startActivity(myIntent);
             }
-        });
+        });*/
     }
 }

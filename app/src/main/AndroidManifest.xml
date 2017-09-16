@@ -23,7 +23,9 @@
         <activity android:name=".leaveScreen" />
         <activity android:name=".outScreen" />
         <activity android:name=".courseScreen" />
-        <activity android:name=".offScreen"></activity>
+        <activity android:name=".offScreen" />
+        <activity android:name=".medicalScreen" />
+        <activity android:name=".maScreen"></activity>
     </application>
 
 </manifest>

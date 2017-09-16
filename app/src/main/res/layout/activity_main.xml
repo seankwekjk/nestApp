@@ -18,42 +18,41 @@
         android:layout_marginTop="76dp" />
 
     <Button
-        android:id="@+id/rsOption"
-        android:text="Report\nSick"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        app:layout_constraintRight_toLeftOf="@+id/mcOption"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/leaveOption"
-        app:layout_constraintTop_toBottomOf="@+id/stdOption"
-        tools:layout_editor_absoluteY="143dp"
-        app:layout_constraintHorizontal_bias="0.558" />
-
-    <Button
-        android:id="@+id/mcOption"
-        android:text="Medical\nLeave"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/rsOption"
-        app:layout_constraintBottom_toTopOf="@+id/outOption"
-        app:layout_constraintTop_toBottomOf="@+id/stdOption" />
-
-    <Button
         android:id="@+id/leaveOption"
         android:text="Leave"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:layout_width="120dp"
         android:layout_height="80dp"
-        app:layout_constraintRight_toLeftOf="@+id/outOption"
+        app:layout_constraintRight_toLeftOf="@+id/medOption"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/offOption"
-        app:layout_constraintTop_toBottomOf="@+id/rsOption" />
+        app:layout_constraintTop_toBottomOf="@+id/stdOption"
+        app:layout_constraintHorizontal_bias="0.558" />
+
+    <Button
+        android:id="@+id/medOption"
+        android:text="Medical"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/leaveOption"
+        app:layout_constraintBottom_toTopOf="@+id/outOption"
+        app:layout_constraintTop_toBottomOf="@+id/stdOption" />
+
+    <Button
+        android:id="@+id/offOption"
+        android:text="Off"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toLeftOf="@+id/outOption"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveOption" />
 
     <Button
         android:id="@+id/outOption"
@@ -63,32 +62,8 @@
         android:layout_width="120dp"
         android:layout_height="80dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/leaveOption"
-        app:layout_constraintBottom_toTopOf="@+id/courseOption"
-        app:layout_constraintTop_toBottomOf="@+id/mcOption" />
-
-    <Button
-        android:id="@+id/offOption"
-        android:text="Off"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        app:layout_constraintRight_toLeftOf="@+id/courseOption"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leaveOption" />
-
-    <Button
-        android:id="@+id/courseOption"
-        android:text="Course"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/offOption"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outOption" />
+        app:layout_constraintTop_toBottomOf="@+id/medOption" />
 
 </android.support.constraint.ConstraintLayout>
