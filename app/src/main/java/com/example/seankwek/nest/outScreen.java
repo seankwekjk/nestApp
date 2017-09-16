@@ -19,6 +19,8 @@ public class outScreen extends AppCompatActivity {
         Button tnb=(Button) findViewById(R.id.tnb);
         Button mindef=(Button) findViewById(R.id.mindef);
         Button other=(Button) findViewById(R.id.other);
+        Button courseNext=(Button)findViewById(R.id.courseNext);
+        final EditText courseText=(EditText)findViewById(R.id.courseText);
         final EditText otherText=(EditText) findViewById(R.id.otherText);
 
         cnb.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +63,23 @@ public class outScreen extends AppCompatActivity {
                 else{
                     String nestText="NEST OS ";
                     String location=otherText.getText().toString();
+                    nestText+=location;
+                    Intent myIntent = new Intent(outScreen.this, endScreen.class).putExtra("nestText",nestText);
+                    startActivity(myIntent);
+                }
+            }
+        });
+
+        courseNext.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                if (TextUtils.isEmpty(courseText.getText().toString())) {
+                    Toast.makeText(outScreen.this, "Please enter course name", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    String nestText="NEST OS COURSE ";
+                    String location=courseText.getText().toString();
                     nestText+=location;
                     Intent myIntent = new Intent(outScreen.this, endScreen.class).putExtra("nestText",nestText);
                     startActivity(myIntent);

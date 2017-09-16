@@ -22,7 +22,6 @@
         <activity android:name=".mcScreen" />
         <activity android:name=".leaveDatesScreen" />
         <activity android:name=".outScreen" />
-        <activity android:name=".courseScreen" />
         <activity android:name=".offScreen" />
         <activity android:name=".medicalScreen" />
         <activity android:name=".maScreen" />

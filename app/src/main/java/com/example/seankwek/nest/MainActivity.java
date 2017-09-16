@@ -49,15 +49,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*mcNest.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, mcScreen.class);
-                startActivity(myIntent);
-            }
-        });*/
-
         leaveNest.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -75,14 +66,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-
-        /*courseNest.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, courseScreen.class);
-                startActivity(myIntent);
-            }
-        });*/
     }
 }
