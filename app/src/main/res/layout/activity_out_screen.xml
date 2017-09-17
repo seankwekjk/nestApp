@@ -49,8 +49,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/mindef"
         android:layout_marginTop="25dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="260sp"/>
+        app:layout_constraintLeft_toLeftOf="@id/otherText"/>
 
     <Button
         android:id="@+id/other"
@@ -81,8 +80,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/mindef"
         android:layout_marginTop="125dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="260sp"/>
+        app:layout_constraintLeft_toLeftOf="@id/courseText" />
 
     <Button
         android:id="@+id/courseNext"

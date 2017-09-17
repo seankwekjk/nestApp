@@ -23,12 +23,12 @@ public class leaveScreen extends AppCompatActivity implements OnItemSelectedList
         Spinner leaveSpinner = (Spinner)findViewById(R.id.leaveSpinner);
         ArrayList<String> optionList = new ArrayList<String>();
         optionList.add("Local Leave");
-        optionList.add("Parent Care");
         optionList.add("Child Care Conditional");
         optionList.add("Child Care Unconditional");
         optionList.add("Compassionate");
-        optionList.add("Paternity/Maternity");
         optionList.add("Marriage");
+        optionList.add("Parent Care");
+        optionList.add("Paternity/Maternity");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(leaveScreen.this,android.R.layout.simple_spinner_item,optionList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         leaveSpinner.setAdapter(adapter);
